@@ -2,6 +2,7 @@ package com.company;
 
 import SIAOD_Golovin.SIAOD1;
 
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -29,10 +30,10 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
-	// write your code here
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+	    Scanner in = new Scanner(System.in);
         PrintStream out = System.out;
-        inOut(in,out);
+
+        SIAOD1(in,out);
     }
 }
